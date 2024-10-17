@@ -1,1 +1,1 @@
-# supit-projekt
+# SUPIT projekt
