@@ -51,6 +51,20 @@ footer {
     align-items: center;
 }
 
+footer .text {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px gray;
+}
+
+footer .before-br {
+    color:lavender;
+}
+
+footer .after-br {
+    color:aquamarine;
+}
+
 .video-background {
     position: relative;
     height: calc(100vh - 100px);
