@@ -1,0 +1,41 @@
+
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    background-color: lightslategray;
+    padding: 10px;
+}
+
+nav > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li{
+    display: inline;
+}
+
+nav > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.content{
+    background-color: palevioletred;
+    padding: 20px;
+    min-height: 100%;
+    margin: 0;
+}
+
+footer{
+    height: 350px;
+    background-image: url(/assets/img/zaiskri-bg.jpg);
+    background-size: 100% 100%;
+}
+
