@@ -49,15 +49,11 @@ footer {
 .main-text {
     font-size: 2em;
     font-weight: 700;
-    text-shadow: 2px 2px 5px gray;
+    /*text-shadow: 2px 2px 5px gray;*/
 }
 
 .before-br {
     color:lavender;
-}
-
-.after-br {
-    color:aquamarine;
 }
 
 .video-background {
@@ -86,4 +82,24 @@ footer {
     color: white;
     z-index: 1;
     margin: 0;
+}
+
+.after-br {
+    --bg-size: 400%;
+    --color-one: hsl(15 90% 55%);
+    --color-two: hsl(40 95% 55%);
+    background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .after-br {
+        animation: move-bg 8s linear infinite;
+    }
+    @keyframes move-bg {
+        to {
+            background-position: var(--bg-size) 0;
+        }
+    }
 }
