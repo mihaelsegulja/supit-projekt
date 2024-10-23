@@ -78,13 +78,14 @@ footer {
 
 .video-background {
     position: relative;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 89px);
     text-align: center;
     overflow: hidden;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: stretch;
 }
 
 #video-home {
