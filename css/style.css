@@ -1,5 +1,23 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 
+@font-face {
+    font-family: "Fira Sans";
+    src: url(/assets/fonts/FiraSans-Regular.woff2);
+}
+
+@font-face {
+    font-family: "Fira Mono";
+    src: url(/assets/fonts/FiraMono-Regular.woff2);
+}
+
+/*
+    TODO: Move font/icon inits into separate .css
+*/
+
+*{
+    font-family: "Fira Sans";
+}
+
 html, body {
     margin: 0;
     height: 100%;
