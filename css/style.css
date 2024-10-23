@@ -43,9 +43,16 @@ nav > ul > li {
     margin: 0 10px;
 }
 
-nav > ul > li > a {
+nav > ul > li > a{
     color: white;
     text-decoration: none;
+    padding: 1px;
+}
+
+nav > ul > li > a > i {
+    color: white;
+    font-size: 1.2em;
+    padding-right: 3px;
 }
 /* navbar end */
 
