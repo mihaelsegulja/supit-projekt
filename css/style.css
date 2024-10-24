@@ -14,7 +14,7 @@
     TODO: Move font/icon inits into separate .css
 */
 
-*{
+* {
     font-family: "Fira Sans";
 }
 
@@ -30,6 +30,7 @@ nav {
     background-color: lightslategray;
     padding: 15px;
     z-index: 10;
+    font-weight: 600;
 }
 
 nav > ul {
@@ -78,6 +79,7 @@ footer {
 
 /* motto text */
 .motto-text {
+    font-family: "Fira Mono";
     font-size: 2em;
     font-weight: 700;
     /*text-shadow: 2px 2px 5px gray;*/
