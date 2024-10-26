@@ -45,7 +45,7 @@ nav > ul > li {
     margin: 0 5px;
 }
 
-nav > ul > li > a{
+nav > ul > li > a {
     color: white;
     text-decoration: none;
 }
@@ -82,11 +82,11 @@ footer {
     /*text-shadow: 2px 2px 5px gray;*/
 }
 
-.before-br {
+#before-br {
     color:lavender;
 }
 
-.after-br {
+#after-br {
     --bg-size: 400%;
     --color-one: hsl(15 90% 55%);
     --color-two: hsl(40 95% 55%);

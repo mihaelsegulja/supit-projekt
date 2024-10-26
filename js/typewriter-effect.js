@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const beforeText = "Budi izvrstan u onome što voliš.";
     const afterText = "ZAISKRI.";
-    const beforeEl = document.querySelector(".before-br");
-    const afterEl = document.querySelector(".after-br");
+    const beforeEl = document.getElementById("before-br");
+    const afterEl = document.getElementById("after-br");
     const cursorBefore = document.getElementById("cursor-before");
     const cursorAfter = document.getElementById("cursor-after");
 
