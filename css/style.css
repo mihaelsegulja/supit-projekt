@@ -10,10 +10,6 @@
     src: url(/assets/fonts/FiraMono-Regular.woff2);
 }
 
-/*
-    TODO: Move font/icon inits into separate .css
-*/
-
 * {
     font-family: "Fira Sans";
 }
