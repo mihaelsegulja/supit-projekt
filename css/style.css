@@ -17,6 +17,7 @@
 html, body {
     margin: 0;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 /* navbar */
@@ -42,19 +43,19 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
 nav > ul > li :hover {
-    color: aqua;
+    color: #00ffff;
 }
 /* navbar end */
 
 .content {
     background-color: palevioletred;
     padding: 20px;
-    height: calc(90vh - 15vh);
+    min-height: calc(90vh - 15vh);
 }
 
 footer {
@@ -79,7 +80,7 @@ footer {
 }
 
 #before-br {
-    color:lavender;
+    color: #ffffff;
 }
 
 #after-br {
@@ -128,7 +129,6 @@ footer {
 
 .video-background p {
     font-size: 2em;
-    color: white;
     z-index: 1;
     margin: 0;
 }
@@ -139,7 +139,7 @@ footer {
     display: inline-block;
     width: 4px;
     height: 1.8em;
-    background-color: white;
+    background-color: #ffffff;
     animation: blink 0.8s step-end infinite;
 }
 
@@ -154,7 +154,12 @@ footer {
 .login-form {
     padding: 10px;
     border-radius: 4px;
-    background-color: lightblue;
+    background-color: #add8e6;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 /* login form end */
+
+#maps {
+    width: 80vw;
+    height: 50vh;
+}
