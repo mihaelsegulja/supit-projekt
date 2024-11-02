@@ -1,14 +1,4 @@
-@import "https://www.nerdfonts.com/assets/css/webfont.css";
-
-@font-face {
-    font-family: "Fira Sans";
-    src: url(/assets/fonts/FiraSans-Regular.woff2);
-}
-
-@font-face {
-    font-family: "Fira Mono";
-    src: url(/assets/fonts/FiraMono-Regular.woff2);
-}
+@import url('fonts.css');
 
 html, body {
     margin: 0;
@@ -30,7 +20,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #778899;
+    background-color: #474f57;
     padding: 15px;
     position: sticky;
     top: 0;
@@ -42,30 +32,27 @@ nav {
     text-decoration: none;
     margin: 0 10px;
     font-weight: 600;
-    background:
-      linear-gradient(
-        to right,
-        #ffffff00,
-        #ffffff00
-      ),
-      linear-gradient(
-        to right,
-        #f45925,
-        #f9b11f
-    );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
+    background: linear-gradient(to right, #f45925, #f9b11f);
+    background-size: 0 3px;
+    background-position: 0 100%;
     background-repeat: no-repeat;
     transition: background-size 300ms;
 }
   
 .main-links a:hover, .section-links a:hover {
-    background-size: 0 3px, 100% 3px;
+    background-size: 100% 3px;
 }
 /* navbar end */
 
+h1 {
+    background: linear-gradient(to right, #f45925, #f9b11f);
+    background-size: 100% 3px;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 .content {
-    background-color: #d87093;
+    background-color: #f3a7c0;
     padding: 20px;
     display: flex;
     flex: 1;
@@ -81,7 +68,7 @@ section {
 footer {
     height: 15vh;
     padding: 20px;
-    background-image: url(/assets/img/zaiskri-bg.jpg);
+    background-image: url('/assets/img/zaiskri-bg.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -89,10 +76,8 @@ footer {
     align-items: center;
 }
 
-
 /* motto text */
 #before-br, #after-br {
-    font-family: "Fira Mono";
     font-size: 2em;
     font-weight: 700;
 }
@@ -123,57 +108,3 @@ footer {
     }
 }
 /* motto text end */
-
-/* video background */
-.video-background {
-    position: relative;
-    overflow: hidden;
-}
-
-#video-home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.video-background p {
-    font-size: 2em;
-    z-index: 1;
-    margin: 0;
-}
-/* video background end */
-
-/* cursor */
-.cursor {
-    display: inline-block;
-    width: 4px;
-    height: 1.8em;
-    background-color: #ffffff;
-    animation: blink 0.8s step-end infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-/* cursor end */
-
-/* login form */
-.login-form {
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #add8e6;
-    box-shadow: 0 6px 8px 0 #00000033;
-}
-/* login form end */
-
-#maps {
-    width: 80vw;
-    height: 50vh;
-    overflow: hidden;
-}
