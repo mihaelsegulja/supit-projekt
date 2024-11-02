@@ -37,10 +37,25 @@ nav {
     text-decoration: none;
     margin: 0 10px;
     font-weight: 600;
+    background:
+      linear-gradient(
+        to right,
+        #ffffff00,
+        #ffffff00
+      ),
+      linear-gradient(
+        to right,
+        #f45925,
+        #f9b11f
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 300ms;
 }
-
+  
 .main-links a:hover, .section-links a:hover {
-    color: #00ffff;
+    background-size: 0 3px, 100% 3px;
 }
 /* navbar end */
 
@@ -81,7 +96,10 @@ footer {
     --bg-size: 400%;
     --color-one: #f45925;
     --color-two: #f9b11f;
-    background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0 / var(--bg-size) 100%;
+    background: linear-gradient(
+        90deg, var(--color-one), var(--color-two), 
+        var(--color-one)) 
+        0 0 / var(--bg-size) 100%;
     color: transparent;
     background-clip: text;
 }
