@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (index < text.length) {
             element.textContent += text.charAt(index);
             index++;
-            setTimeout(() => typeText(text, element, cursor, index, callback), Math.random() * 400 + 50);
+            setTimeout(() => typeText(text, element, cursor, index, callback), Math.random() * 350 + 50);
         } else {
             if (callback) callback();
         }

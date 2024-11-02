@@ -20,7 +20,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #474f57;
+    background-color: #4e4a41;
     padding: 15px;
     position: sticky;
     top: 0;
@@ -41,6 +41,7 @@ nav {
   
 .main-links a:hover, .section-links a:hover {
     background-size: 100% 3px;
+    color: #babbbd;
 }
 /* navbar end */
 
@@ -52,7 +53,7 @@ h1 {
 }
 
 .content {
-    background-color: #f3a7c0;
+    background-color: #f7f5f3;
     padding: 20px;
     display: flex;
     flex: 1;

@@ -1,4 +1,8 @@
 
+p {
+    line-height: 1.5em;
+}
+
 #maps {
     width: 80vw;
     height: 50vh;

@@ -1,3 +1,6 @@
-/* TODO: Add all colors here
-    import them later to each 
-    css file where needed  */
+:root {
+    --accent-color-1: #f45925;
+    --accent-color-2: #f9b11f;
+    --primary-color: #f7f5f3;
+    --secondary-color: #4e4a41;
+}
