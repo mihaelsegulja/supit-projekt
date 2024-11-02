@@ -10,14 +10,19 @@
     src: url(/assets/fonts/FiraMono-Regular.woff2);
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 html {
     scroll-behavior: smooth;
     font-family: "Fira Sans";
 }
 
-html, body {
-    margin: 0;
-    height: 100%;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 /* navbar */
@@ -62,7 +67,11 @@ nav {
 .content {
     background-color: #d87093;
     padding: 20px;
-    min-height: calc(90vh - 15vh);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 section {
@@ -97,8 +106,7 @@ footer {
     --color-one: #f45925;
     --color-two: #f9b11f;
     background: linear-gradient(
-        90deg, var(--color-one), var(--color-two), 
-        var(--color-one)) 
+        90deg, var(--color-one), var(--color-two), var(--color-one)) 
         0 0 / var(--bg-size) 100%;
     color: transparent;
     background-clip: text;
@@ -119,11 +127,7 @@ footer {
 /* video background */
 .video-background {
     position: relative;
-    height: calc(100vh - 89px);
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #video-home {
@@ -171,4 +175,5 @@ footer {
 #maps {
     width: 80vw;
     height: 50vh;
+    overflow: hidden;
 }
