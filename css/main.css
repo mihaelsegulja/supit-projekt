@@ -53,6 +53,10 @@ h1 {
     background-repeat: no-repeat;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 .content {
     background-color: var(--primary-color);
     padding: 2.5% 5%;
