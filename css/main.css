@@ -40,7 +40,12 @@ nav {
     transition: background-size 300ms;
 }
   
-.main-links a:hover, .section-links a:hover {
+.main-links a:hover,
+.main-links a:active,
+.main-links a:focus,
+.section-links a:hover,
+.section-links a:active,
+.section-links a:focus {
     background-size: 100% 3px;
     color: var(--tertiary-color);
 }
@@ -76,6 +81,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 /* motto text */
