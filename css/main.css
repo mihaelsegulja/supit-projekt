@@ -67,10 +67,6 @@ p {
     flex-direction: column;
 }
 
-section {
-    scroll-margin-top: 60px;
-}
-
 footer {
     height: 15vh;
     padding: 20px;

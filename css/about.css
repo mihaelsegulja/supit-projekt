@@ -1,4 +1,8 @@
 
+section {
+    scroll-margin-top: 60px;
+}
+
 #maps {
     width: 80vw;
     height: 50vh;
