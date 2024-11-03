@@ -5,6 +5,6 @@
     padding: 2.5% 5%;
     border-radius: 5px;
     border: 3px solid var(--tertiary-color);
-    box-shadow: 2px 6px 8px 0 #00000033;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 /* login form end */
