@@ -1,4 +1,5 @@
 @import url('fonts.css');
+@import url('color-scheme.css');
 
 html, body {
     margin: 0;
@@ -20,7 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4e4a41;
+    background-color: var(--secondary-color);
     padding: 15px;
     position: sticky;
     top: 0;
@@ -32,7 +33,7 @@ nav {
     text-decoration: none;
     margin: 0 10px;
     font-weight: 600;
-    background: linear-gradient(to right, #f45925, #f9b11f);
+    background: linear-gradient(to right, var(--accent-color-1), var(--accent-color-2));
     background-size: 0 3px;
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -41,19 +42,19 @@ nav {
   
 .main-links a:hover, .section-links a:hover {
     background-size: 100% 3px;
-    color: #babbbd;
+    color: var(--tertiary-color);
 }
 /* navbar end */
 
 h1 {
-    background: linear-gradient(to right, #f45925, #f9b11f);
+    background: linear-gradient(to right, var(--accent-color-1), var(--accent-color-2));
     background-size: 100% 3px;
     background-position: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .content {
-    background-color: #f7f5f3;
+    background-color: var(--primary-color);
     padding: 2.5% 5%;
     display: flex;
     flex: 1;
@@ -89,11 +90,7 @@ footer {
 
 #after-br {
     --bg-size: 400%;
-    --color-one: #f45925;
-    --color-two: #f9b11f;
-    background: linear-gradient(
-        90deg, var(--color-one), var(--color-two), var(--color-one)) 
-        0 0 / var(--bg-size) 100%;
+    background: linear-gradient(90deg, var(--accent-color-1), var(--accent-color-2), var(--accent-color-1)) 0 0 / var(--bg-size) 100%;
     color: transparent;
     background-clip: text;
 }
