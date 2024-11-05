@@ -1,9 +1,30 @@
 
 section {
     scroll-margin-top: 60px;
+    margin: 3vh 0;
 }
 
 #maps {
     width: 90vw;
     height: 50vh;
+}
+
+.box-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.box {
+    border: 3px solid var(--tertiary-color);
+    border-radius: 5px;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 0 10px 20px 10px;
+    transition: transform 0.25s;
+    background-color: var(--primary-color);
+}
+
+.box:hover {
+    transform: scale(1.05);
 }
