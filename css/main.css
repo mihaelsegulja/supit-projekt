@@ -14,7 +14,6 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    padding-top: 5vh;
     background-color: var(--primary-color);
 }
 
@@ -86,6 +85,7 @@ p {
 }
 
 .content {
+    margin-top: 5vh;
     background-color: var(--primary-color);
     padding: 0 5% 2.5% 5%;
     display: flex;
