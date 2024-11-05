@@ -14,6 +14,8 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    padding-top: 5vh;
+    background-color: var(--primary-color);
 }
 
 /* navbar */
@@ -22,8 +24,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
-    padding: 15px;
-    position: sticky;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 999;
 }
@@ -31,7 +34,7 @@ nav {
 .main-links a, .section-links a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
     font-weight: 600;
     background: linear-gradient(to right, var(--accent-color-1), var(--accent-color-2));
     background-size: 0 3px;
@@ -93,8 +96,7 @@ p {
 }
 
 footer {
-    height: 15vh;
-    padding: 20px;
+    padding: 30px;
     background-image: url('/assets/img/zaiskri-bg.jpg');
     background-size: cover;
     background-position: center;
