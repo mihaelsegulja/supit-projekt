@@ -28,3 +28,9 @@ section {
 .box:hover {
     transform: scale(1.05);
 }
+
+span {
+    background: linear-gradient(to right, var(--accent-color-1), var(--accent-color-2));
+    color: transparent;
+    background-clip: text;
+}
