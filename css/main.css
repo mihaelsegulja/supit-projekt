@@ -72,7 +72,7 @@ p {
 
 .img-container {
     width: 100vw;
-    height: 20vh;
+    height: 30vh;
     margin-bottom: 20px;
     overflow: hidden;
 }
@@ -90,9 +90,12 @@ p {
     padding: 0 5% 2.5% 5%;
     display: flex;
     flex: 1;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.content-center {
+    justify-content: center;
 }
 
 footer {
