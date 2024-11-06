@@ -39,7 +39,7 @@ nav {
     background-size: 0 3px;
     background-position: 0 100%;
     background-repeat: no-repeat;
-    transition: background-size 0.3s;
+    transition: background-size 0.3s, color 0.3s;
 }
   
 .main-links a:hover,
@@ -87,7 +87,7 @@ p {
 .content {
     margin-top: 5vh;
     background-color: var(--primary-color);
-    padding: 0 5% 2.5% 5%;
+    padding: 0 15% 5%;
     display: flex;
     flex: 1;
     align-items: center;

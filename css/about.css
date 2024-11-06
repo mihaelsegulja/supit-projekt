@@ -5,32 +5,33 @@ section {
 }
 
 #maps {
-    width: 90vw;
+    width: 70vw;
     height: 50vh;
 }
 
-.box-container {
+.grid-container {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
-.box {
+.grid-item {
     border: 3px solid var(--tertiary-color);
     border-radius: 5px;
     line-height: 1.5em;
     text-align: justify;
-    padding: 0 10px 20px 10px;
-    transition: transform 0.25s;
+    padding: 0 10px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
     background-color: var(--primary-color);
 }
 
-.box:hover {
+.grid-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
 span {
-    background: linear-gradient(to right, var(--accent-color-1), var(--accent-color-2));
+    background: linear-gradient(0deg, var(--accent-color-1), var(--accent-color-2));
     color: transparent;
     background-clip: text;
 }
