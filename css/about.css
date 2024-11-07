@@ -30,7 +30,7 @@ section h2 {
     border-radius: 5px;
     line-height: 1.5em;
     text-align: justify;
-    padding: 0 10px 20px;
+    padding: 0 20px 20px;
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: var(--primary-color);
 }
