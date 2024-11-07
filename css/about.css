@@ -1,47 +1,50 @@
-
 section {
-    scroll-margin-top: 60px;
-    margin: 3vh 0;
+  scroll-margin-top: 60px;
+  margin: 3vh 0;
 }
 
 section h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .p-container {
-    margin: 5vh 5vw;
-    font-family: 'Quintessential';
-    font-size: larger;
+  margin: 5vh 5vw;
+  font-family: "Quintessential";
+  font-size: larger;
 }
 
 #maps {
-    width: 70vw;
-    height: 50vh;
+  width: 70vw;
+  height: 50vh;
 }
 
 .grid-container {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .grid-item {
-    border: 2px solid var(--tertiary-color);
-    border-radius: 5px;
-    line-height: 1.5em;
-    text-align: justify;
-    padding: 0 20px 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: var(--primary-color);
+  border: 2px solid var(--tertiary-color);
+  border-radius: 5px;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 0 20px 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: var(--primary-color);
 }
 
 .grid-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
 span {
-    background: linear-gradient(0deg, var(--accent-color-1), var(--accent-color-2));
-    color: transparent;
-    background-clip: text;
+  background: linear-gradient(
+    0deg,
+    var(--accent-color-1),
+    var(--accent-color-2)
+  );
+  color: transparent;
+  background-clip: text;
 }
