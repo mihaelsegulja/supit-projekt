@@ -26,7 +26,7 @@
 /* cursor */
 .cursor {
     display: inline-block;
-    width: 4px;
+    width: 8px;
     height: 1.8em;
     background-color: #ffffff;
     animation: blink 0.8s step-end infinite;
