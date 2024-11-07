@@ -4,6 +4,16 @@ section {
     margin: 3vh 0;
 }
 
+section h2 {
+    text-align: center;
+}
+
+.p-container {
+    margin: 5vh 5vw;
+    font-family: 'Quintessential';
+    font-size: larger;
+}
+
 #maps {
     width: 70vw;
     height: 50vh;
@@ -16,7 +26,7 @@ section {
 }
 
 .grid-item {
-    border: 3px solid var(--tertiary-color);
+    border: 2px solid var(--tertiary-color);
     border-radius: 5px;
     line-height: 1.5em;
     text-align: justify;
