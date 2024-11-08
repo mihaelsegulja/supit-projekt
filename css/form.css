@@ -1,1 +1,28 @@
-/* TODO: add form styling here */
+input, label {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 5px;
+    font-weight: 500;
+}
+
+input {
+    border: 2px solid var(--tertiary-color);
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+input[type=submit] {
+    margin-top: 1rem;
+}
+
+/* input[type=text], input[type=password] {
+} */
