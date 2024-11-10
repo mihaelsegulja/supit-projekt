@@ -1,6 +1,18 @@
+/* Color scheme */
+
 :root {
   --accent-color-1: #f45925;
   --accent-color-2: #f9b11f;
+  --accent-gradient-90dg: linear-gradient(
+    90deg,
+    var(--accent-color-1),
+    var(--accent-color-2)
+  );
+  --accent-gradient-0dg: linear-gradient(
+    0deg,
+    var(--accent-color-1),
+    var(--accent-color-2)
+  );
   --primary-color: #f5f2ec;
   --secondary-color: #4e4a41;
   --tertiary-color: #bbbab8;

@@ -1,3 +1,5 @@
+/* Styling for any element that appears on more than 1 page */
+
 @import url("fonts.css");
 @import url("color-scheme.css");
 
@@ -38,11 +40,7 @@ nav {
   text-decoration: none;
   margin: 0 15px;
   font-weight: 600;
-  background: linear-gradient(
-    to right,
-    var(--accent-color-1),
-    var(--accent-color-2)
-  );
+  background: var(--accent-gradient-90dg);
   background-size: 0 3px;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -61,11 +59,7 @@ nav {
 /* navbar end */
 
 h1 {
-  background: linear-gradient(
-    to right,
-    var(--accent-color-1),
-    var(--accent-color-2)
-  );
+  background: var(--accent-gradient-90dg);
   background-size: 100% 3px;
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -76,11 +70,7 @@ p {
 }
 
 .nf {
-  background: linear-gradient(
-    to right,
-    var(--accent-color-1),
-    var(--accent-color-2)
-  );
+  background: var(--accent-gradient-90dg);
   color: transparent;
   background-clip: text;
 }
