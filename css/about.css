@@ -20,23 +20,51 @@ section h2 {
   height: 60vh;
 }
 
-.grid-container {
+.grid-container,
+.grid-container-small {
   display: grid;
+  padding-top: 20px;
+}
+
+.grid-container {
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
-.grid-item {
-  border: 2px solid var(--tertiary-color);
-  border-radius: 5px;
-  line-height: 1.5em;
-  text-align: justify;
-  padding: 0 20px 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  background-color: var(--primary-color);
+.grid-container-small {
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.grid-item:hover {
+
+.grid-item,
+.grid-item-small {
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.grid-item {
+  border: 2px solid var(--tertiary-color);
+  padding: 0 20px 20px;
+}
+
+.grid-item-small {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-item-small img {
+  width: 70%;
+  height: 70%;
+  object-fit: scale-down;
+}
+
+.grid-item:hover,
+.grid-item-small:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
