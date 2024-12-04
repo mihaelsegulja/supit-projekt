@@ -13,7 +13,7 @@
     var(--accent-color-1),
     var(--accent-color-2)
   );
-  --primary-color: #f5f2ec;
+  --primary-color: #f5f4f3;
   --secondary-color: #4e4a41;
   --tertiary-color: #bbbab8;
   /* TODO: add more color shades */
