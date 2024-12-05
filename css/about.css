@@ -73,11 +73,7 @@ section h2 {
 }
 
 h3 span {
-  background: linear-gradient(
-    0deg,
-    var(--accent-color-1),
-    var(--accent-color-2)
-  );
+  background: var(--accent-gradient-0dg);
   color: transparent;
   background-clip: text;
 }

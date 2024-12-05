@@ -150,3 +150,8 @@ footer {
   }
 }
 /* motto text end */
+
+hr {
+  color: var(--light-gray);
+  width: 100%;
+}

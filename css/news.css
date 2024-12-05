@@ -19,7 +19,7 @@
   border-radius: 5px;
   background-size: cover;
   background-position: center;
-  padding: 50px;
+  padding: 10vh 5vw;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
