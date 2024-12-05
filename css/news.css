@@ -1,0 +1,51 @@
+/* news start page and individual news pages styling*/
+
+.news-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+.news-item {
+  text-align: center;
+  padding: 0;
+}
+
+.news-item {
+  border: 5px solid var(--tertiary-color);
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  flex: 33%;
+  padding: 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover,
+.news-item:active {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
+.news-item:nth-child(1) {
+  background-image: url("/assets/img/novost1.jpg");
+}
+
+.news-item:nth-child(2) {
+  background-image: url("/assets/img/novost2.jpg");
+}
+
+.news-item:nth-child(3) {
+  background-image: url("/assets/img/novost3.jpg");
+}
+
+.news-container * {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #00000055;
+}
+

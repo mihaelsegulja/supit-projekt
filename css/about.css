@@ -18,6 +18,7 @@ section h2 {
 #maps {
   width: 80vw;
   height: 60vh;
+  border: 0;
 }
 
 .grid-container,
@@ -62,7 +63,7 @@ section h2 {
 .grid-item-small img {
   width: 70%;
   height: 70%;
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .grid-item:hover,
