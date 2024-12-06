@@ -1,4 +1,4 @@
-/* news start page and individual news pages styling*/
+/* news start page */
 
 .news-container {
   display: flex;
@@ -15,18 +15,19 @@
 }
 
 .news-item {
-  border: 5px solid var(--tertiary-color);
-  border-radius: 5px;
+  border: 10px solid var(--tertiary-color);
+  border-radius: 50%;
   background-size: cover;
   background-position: center;
   padding: 10vh 5vw;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
 }
 
 .news-item:hover,
 .news-item:active {
   transform: scale(1.05);
   box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  opacity: 0.8;
 }
 
 .news-item:nth-child(1) {
