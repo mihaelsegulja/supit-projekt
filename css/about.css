@@ -81,6 +81,7 @@ h3 span {
 .vert-container{
   display: flex;
   padding: 10px 0;
+  flex-wrap: wrap;
 }
 
 .vert {
