@@ -1,0 +1,25 @@
+{
+  "name": "supit-projekt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihaelsegulja/supit-projekt.git"
+  },
+  "keywords": [],
+  "author": "Mihael Šegulja",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/mihaelsegulja/supit-projekt/issues"
+  },
+  "homepage": "https://github.com/mihaelsegulja/supit-projekt",
+  "description": "website project for college",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "jquery-ui": "^1.14.1"
+  }
+}
