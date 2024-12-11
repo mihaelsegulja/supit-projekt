@@ -3,6 +3,12 @@
 @import url("fonts.css");
 @import url("color-scheme.css");
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
