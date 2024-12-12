@@ -17,6 +17,8 @@ input {
 
 input[type=submit] {
     margin-top: 1rem;
+    font-family: inherit;
+    font-weight: 500;
 }
 
 /* input[type=text], input[type=password] {
