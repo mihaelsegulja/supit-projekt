@@ -1,0 +1,48 @@
+/* Contact form popup styling */
+
+@import url("form.css");
+
+.ui-widget {
+    font-family: "Fira Sans" !important;
+}
+
+.ui-dialog {
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030 !important;
+    border-radius: 5px !important;
+    background-color: var(--primary-color) !important;
+}
+
+.ui-dialog-titlebar {
+    background-color: var(--tertiary-color) !important;
+}
+
+.ui-dialog-titlebar-close {
+    transition: background-color 0.3s !important;
+}
+
+.ui-dialog-titlebar-close:hover,
+.ui-dialog-titlebar-close:active {
+    background-color: var(--accent-color-1) !important;
+}
+
+.ui-dialog-buttonpane {
+    background-color: var(--primary-color) !important;
+}
+
+.ui-dialog-buttonpane button {
+    transition: background-color 0.3s !important;
+}
+
+.ui-dialog-buttonpane button:nth-child(1):hover,
+.ui-dialog-buttonpane button:nth-child(1):active{
+    background-color: var(--accent-color-2) !important;
+}
+
+.ui-dialog-buttonpane button:nth-child(2):hover,
+.ui-dialog-buttonpane button:nth-child(2):active{
+    background-color: var(--accent-color-1) !important;
+}
+
+.ui-widget-overlay {
+    background-color: #000000dd !important; 
+}
