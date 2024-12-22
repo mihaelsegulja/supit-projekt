@@ -161,3 +161,41 @@ hr {
   color: var(--light-gray);
   width: 100%;
 }
+
+/* content animation */
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animated-item.visible {
+  animation: fadeInFromBottom 0.5s ease-out forwards;
+}
+
+.animated-item.h1-visible {
+  animation: fadeInFromTop 0.5s ease-out forwards;
+}
+/* content animation end */

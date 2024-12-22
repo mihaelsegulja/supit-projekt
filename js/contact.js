@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $.get("/views/contact.html", function (data) {
         $("body").append(data);
