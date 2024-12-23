@@ -14,7 +14,8 @@
 }
 
 .ui-dialog-titlebar {
-    background-color: var(--tertiary-color) !important;
+    background-color: var(--primary-color) !important;
+    border: 0 !important;
 }
 
 .ui-dialog-titlebar-close {
@@ -45,5 +46,5 @@
 }
 
 .ui-widget-overlay {
-    background-color: #000000dd !important; 
+    background-color: #000000e0 !important; 
 }

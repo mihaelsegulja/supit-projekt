@@ -12,22 +12,22 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
 <body>
-    <div id="popup-container" title="Kontaktirajte nas" style="display:none;">
-        <form id="popup-form-content">
-            <label for="fullname">Puno ime:</label>
-            <input type="text" id="fullName" required>
+    <div id="popup-container">
+        <form id="popup-form-content" action="https://www.fulek.com/mvc/supit/project-contact-form" method="get">
+            <label for="fullName">Puno ime:</label>
+            <input type="text" id="fullName" name="FullName" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" name="Email" required>
             <label for="importance">Važnost poruke:</label>
-            <select id="importance">
+            <select id="importance" name="Importance">
                 <option value="low" default>Niska</option>
-                <option value="normal">Normalna</option>
+                <option value="medium">Srednja</option>
                 <option value="high">Visoka</option>
             </select>
             <label for="message">Poruka:</label>
-            <textarea id="message" required></textarea>
+            <textarea id="message" name="Message" required></textarea>
             <label for="recieveNewsletter">Želim primati obavijesti</label>
-            <input type="checkbox" id="recieveNewsletter">
+            <input type="checkbox" id="recieveNewsletter" name="RecieveNewsletter" value=""> <!-- TODO: send correct value-->
         </form>
     </div>
 </body>
