@@ -23,13 +23,13 @@ $(document).ready(function() {
                     let email = $("#email").val();
                     let importance = $("#importance").val();
                     let message = $("#message").val();
-                    let recieveNewsletter = $("#recieveNewsletter").is(":checked");
+                    let receiveNewsletter = $("#receiveNewsletter").is(":checked");
 
                     // console.log(fullName);
                     // console.log(email);
                     // console.log(importance);
                     // console.log(message);
-                    // console.log(recieveNewsletter);
+                    // console.log(receiveNewsletter);
 
                     if (!fullName || !email || !message){
                         alert("Ispunite sva polja.");

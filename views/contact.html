@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="popup-container">
-        <form id="popup-form-content" action="https://www.fulek.com/mvc/supit/project-contact-form" method="get">
+        <form id="popup-form-content" action="https://www.fulek.com/mvc/supit/project-contact-form" method="post">
             <label for="fullName">Puno ime:</label>
             <input type="text" id="fullName" name="FullName" required>
             <label for="email">Email:</label>
@@ -26,8 +26,8 @@
             </select>
             <label for="message">Poruka:</label>
             <textarea id="message" name="Message" required></textarea>
-            <label for="recieveNewsletter">Želim primati obavijesti</label>
-            <input type="checkbox" id="recieveNewsletter" name="RecieveNewsletter" value=""> <!-- TODO: send correct value-->
+            <label for="receiveNewsletter">Želim primati obavijesti</label>
+            <input type="checkbox" id="receiveNewsletter" name="ReceiveNewsletter" value="true">
         </form>
     </div>
 </body>
