@@ -19,6 +19,7 @@ section h2 {
   width: 80vw;
   height: 60vh;
   border: 0;
+  border-radius: 10px;
 }
 
 .grid-container,
@@ -42,7 +43,7 @@ section h2 {
 .grid-item-small {
   transition: transform 0.3s, box-shadow 0.3s;
   background-color: var(--primary-color);
-  border-radius: 5px;
+  border-radius: 10px;
   line-height: 1.5em;
 }
 
@@ -89,7 +90,7 @@ h3 span {
   width: 50%;
   margin: 0 10px 20px;
   border: 2px solid var(--tertiary-color);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px;
 }
 

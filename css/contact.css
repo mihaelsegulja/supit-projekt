@@ -8,7 +8,7 @@
 
 .ui-dialog {
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030 !important;
-    border-radius: 5px !important;
+    border-radius: 10px !important;
     border: 2px solid var(--tertiary-color) !important;
     background-color: var(--primary-color) !important;
 }

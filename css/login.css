@@ -5,7 +5,7 @@
 /* login form */
 .login-form {
   padding: 20px 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid var(--tertiary-color);
   box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
   width: 350px;

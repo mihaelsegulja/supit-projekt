@@ -11,6 +11,9 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <script src="/js/contact.js" defer></script>
     <script src="/js/animation-global.js" defer></script>
+    <script src="/node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="/node_modules/@fancyapps/ui/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="/css/news.css">
 </head>
 <body>
     <nav>
@@ -47,7 +50,18 @@
             16.mjestu u vještini IT Software Solutions for Business.
         </p>
         <div class="gallery-container">
-            
+            <script>Fancybox.bind('[data-fancybox]')</script>
+            <a href="/assets/img/galerija1.jpg" data-fancybox="gallery">
+                <img src="/assets/img/galerija1.jpg" alt="img 1">
+            </a>
+            <a href="/assets/img/galerija2.jpg" data-fancybox="gallery">
+                <img src="/assets/img/galerija2.jpg" alt="img 2">
+            </a>
+        </div>
+        <div class="video-container">
+            <video controls>
+            <source src="/assets/video/worldskills.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
     <footer>
