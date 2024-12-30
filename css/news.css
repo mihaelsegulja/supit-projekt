@@ -72,8 +72,20 @@
 }
 
 .video-container video {
-  width: 400px;
+  width: 70%;
   height: auto;
   border: 1px solid var(--tertiary-color);
   border-radius: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .video-container video {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .video-container video {
+    width: 100%;
+  }
 }

@@ -2,6 +2,7 @@
 
 @import url("fonts.css");
 @import url("color-scheme.css");
+@import url("contact.css");
 
 *,
 *::before,
@@ -38,6 +39,7 @@ nav {
   width: 100%;
   top: 0;
   z-index: 999;
+  height: 50px;
 }
 
 .main-links a,
@@ -50,7 +52,7 @@ nav {
   background-size: 0 3px;
   background-position: 0 100%;
   background-repeat: no-repeat;
-  transition: background-size 0.3s, color 0.3s;
+  transition: background-size 0.5s cubic-bezier(0.25, 1, 0.5, 1), color 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   padding: 15px 0;
 }
 
@@ -97,7 +99,7 @@ p {
 }
 
 .content {
-  margin-top: 5vh;
+  margin-top: 50px;
   background-color: var(--primary-color);
   padding: 0 15% 5%;
   display: flex;
@@ -185,17 +187,50 @@ hr {
   }
 }
 
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .animated-item {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.6s, transform 0.6s;
 }
 
 .animated-item.visible {
-  animation: fadeInFromBottom 0.5s ease-out forwards;
+  animation: fadeInFromBottom 0.6s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
 
 .animated-item.h1-visible {
-  animation: fadeInFromTop 0.5s ease-out forwards;
+  animation: fadeInFromTop 0.6s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.animated-links {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.animated-links.visible {
+  animation: fadeInFromRight 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards;
 }
 /* content animation end */
+
+@media screen and (max-width: 450px) {
+  .content {
+    padding: 0 5px 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    padding: 0 20% 5%;
+  }
+}

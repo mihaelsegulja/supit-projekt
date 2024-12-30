@@ -38,7 +38,6 @@ section h2 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-
 .grid-item,
 .grid-item-small {
   transition: transform 0.3s, box-shadow 0.3s;
@@ -87,7 +86,6 @@ h3 span {
 
 .vert {
   flex: 1;
-  width: 50%;
   margin: 0 10px 20px;
   border: 2px solid var(--tertiary-color);
   border-radius: 10px;
@@ -96,4 +94,14 @@ h3 span {
 
 .vert p {
   padding: 0 20px;
+}
+
+@media screen and (max-width: 450px) {
+  #maps {
+    width: 100%;
+  }
+
+  .vert-container {
+    flex-direction: column;
+  }
 }

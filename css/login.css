@@ -11,3 +11,9 @@
   width: 350px;
 }
 /* login form end */
+
+@media screen and (max-width: 450px) {
+  .login-form {
+    width: 100vw;
+  }
+}
