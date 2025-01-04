@@ -6,6 +6,9 @@ $(document).ready(function() {
         $("#popup-container").dialog({
             autoOpen: false,
             modal: true,
+            width: "auto",
+            fluid: true,
+            resizable: false,
             show: {
                 effect: "drop",
                 direction: "up",
@@ -16,7 +19,6 @@ $(document).ready(function() {
                 direction: "up",
                 duration: 500
             },
-            width: 400,
             buttons: {
                 "Pošalji": function() {
                     let fullName = $("#fullName").val();
@@ -53,14 +55,16 @@ $(document).ready(function() {
                 $(".ui-widget-overlay").fadeOut(500).off("click");
             },
             create: function() {
+                $(this).css("maxWidth", "450px");
+                
                 $(this)
-                    .closest(".ui-dialog")
-                    .find(".ui-dialog-title")
-                    .html(`
-                        <h2 style="font-size:1.5em;">
-                        <i class="nf nf-oct-mail"></i> 
-                        Kontaktirajte nas</h2>
-                    `);
+                .closest(".ui-dialog")
+                .find(".ui-dialog-title")
+                .html(`
+                    <h2 style="font-size:1.5em;">
+                    <i class="nf nf-oct-mail"></i> 
+                    Kontaktirajte nas</h2>
+                `);
             }
         });
     });
@@ -69,4 +73,25 @@ $(document).ready(function() {
         e.preventDefault();
         $("#popup-container").dialog("open");
     });
+
+    // on window resize run function
+    $(window).resize(function() {
+        fluidDialog();
+    });
+    
+    // catch dialog if opened within a viewport smaller than the dialog width
+    $(document).on("dialogopen", ".ui-dialog", function(event, ui) {
+        fluidDialog();
+    });
+    
+    function fluidDialog() {
+        // each open dialog
+        $(".ui-dialog:visible").each(function() {
+            var dialog = $(this).find(".ui-dialog-content").data("ui-dialog");
+            if (dialog.options.fluid) {
+                // reposition dialog
+                dialog.option("position", dialog.options.position);
+            }
+        });
+    }
 });

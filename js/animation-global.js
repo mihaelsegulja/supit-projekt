@@ -17,7 +17,7 @@ const handleIntersection = (entries, observer) => {
 };
 
 const observer = new IntersectionObserver(handleIntersection, {
-    threshold: 0.15 // Trigger when 15% of the element is visible
+    threshold: 0 // Trigger as soon as any part of the element enters the viewport
 });
 
 animatedItems.forEach(item => observer.observe(item));

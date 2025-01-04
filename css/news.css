@@ -58,7 +58,7 @@
 
 .gallery-container a img {
   width: 200px;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
   border: 1px solid var(--tertiary-color);
   border-radius: 10px;
