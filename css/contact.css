@@ -23,7 +23,8 @@
 }
 
 .ui-dialog-titlebar-close:hover,
-.ui-dialog-titlebar-close:active {
+.ui-dialog-titlebar-close:active,
+.ui-dialog-titlebar-close:focus {
   background-color: var(--accent-color-1) !important;
 }
 
@@ -36,12 +37,14 @@
 }
 
 .ui-dialog-buttonpane button:nth-child(1):hover,
-.ui-dialog-buttonpane button:nth-child(1):active {
+.ui-dialog-buttonpane button:nth-child(1):active,
+.ui-dialog-buttonpane button:nth-child(1):focus {
   background-color: var(--accent-color-2) !important;
 }
 
 .ui-dialog-buttonpane button:nth-child(2):hover,
-.ui-dialog-buttonpane button:nth-child(2):active {
+.ui-dialog-buttonpane button:nth-child(2):active,
+.ui-dialog-buttonpane button:nth-child(2):focus {
   background-color: var(--accent-color-1) !important;
 }
 

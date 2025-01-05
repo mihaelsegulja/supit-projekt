@@ -1,3 +1,4 @@
+/* Text typewriter animation on homepage */
 
 document.addEventListener('DOMContentLoaded', function() {
     const beforeText = "Budi izvrstan u onome što voliš.";

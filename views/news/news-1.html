@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novost 1</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- jQuery and jQuery UI -->
     <link rel="stylesheet" href="/node_modules/jquery-ui/dist/themes/base/jquery-ui.min.css">
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/jquery-ui/dist/jquery-ui.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- Bootstrap (To Be Added) -->
+    
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="/node_modules/@fancyapps/ui/dist/fancybox/fancybox.css">
+    <script src="/node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+    <!-- Project Stylesheets -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/news.css">
+    <!-- Project JS -->
     <script src="/js/contact.js" defer></script>
     <script src="/js/animation-global.js" defer></script>
-    <script src="/node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="/node_modules/@fancyapps/ui/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="/css/news.css">
 </head>
 <body>
     <nav>
@@ -28,7 +34,7 @@
     </nav>
     <div class="content">
         <div class="img-container">
-            <img class="animated-item" src="/assets/img/novost1.jpg" loading="lazy">
+            <img class="animated-item" src="/assets/img/novost1.jpg">
         </div>
         <h1 class="animated-item">WorldSkills natjecanje - Kazan 2019.</h1>
         <p>
@@ -52,10 +58,10 @@
         <div class="gallery-container">
             <script>Fancybox.bind('[data-fancybox]')</script>
             <a href="/assets/img/galerija1.jpg" data-fancybox="gallery">
-                <img src="/assets/img/galerija1.jpg" alt="img 1">
+                <img src="/assets/img/galerija1.jpg" alt="img 1" loading="lazy">
             </a>
             <a href="/assets/img/galerija2.jpg" data-fancybox="gallery">
-                <img src="/assets/img/galerija2.jpg" alt="img 2">
+                <img src="/assets/img/galerija2.jpg" alt="img 2" loading="lazy">
             </a>
         </div>
         <div class="video-container">

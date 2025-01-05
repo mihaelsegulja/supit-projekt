@@ -3,6 +3,7 @@
 :root {
   --accent-color-1: #f45925;
   --accent-color-2: #f9b11f;
+  --accent-color-3: #f08420;
   --accent-gradient-90dg: linear-gradient(
     90deg,
     var(--accent-color-1),

@@ -1,3 +1,5 @@
+/* Animations when element appears on screen, sitewide */
+
 const animatedItems = document.querySelectorAll('.animated-item');
 const animatedLinks = document.querySelectorAll('.animated-links');
 
@@ -17,7 +19,7 @@ const handleIntersection = (entries, observer) => {
 };
 
 const observer = new IntersectionObserver(handleIntersection, {
-    threshold: 0 // Trigger as soon as any part of the element enters the viewport
+    threshold: 0 // Trigger as soon as element enters the viewport
 });
 
 animatedItems.forEach(item => observer.observe(item));

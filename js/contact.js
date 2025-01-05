@@ -1,3 +1,4 @@
+/* Contact popup, sitewide */
 
 $(document).ready(function() {
     $.get("/components/contact.html", function(data) {
@@ -33,6 +34,7 @@ $(document).ready(function() {
                     // console.log(message);
                     // console.log(receiveNewsletter);
 
+                    // validation
                     if (!fullName || !email || !message){
                         alert("Ispunite sva polja.");
                         return;

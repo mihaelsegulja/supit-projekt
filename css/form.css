@@ -1,31 +1,51 @@
 /* Form styling */
 
-textarea:focus, input:focus {
-    outline: none;
+textarea:focus,
+input:focus {
+  outline: none;
 }
 
 label {
-    font-weight: 500;
-    text-align: left;
+  font-weight: 500;
+  text-align: left;
 }
 
-input, textarea, select, button[type=submit] {
-    font-family: "Fira Sans" !important;
-    border: 2px solid var(--tertiary-color);
-    border-radius: 5px;
-    padding: 0.5rem;
-    width: 100%;
-    margin: 5px 0 10px;
-    box-sizing: border-box;
-    font-size: medium;
-    background-color: #00000000;
+input,
+textarea,
+select,
+button[type="submit"] {
+  font-family: "Fira Sans" !important;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 5px 0 10px;
+  box-sizing: border-box;
+  font-size: medium;
+  background-color: #00000000;
+  transition: background-color 0.3s;
 }
 
-input[type=checkbox] {
-    width: auto;
+input:focus,
+textarea:focus,
+select:focus,
+button[type="submit"]:focus {
+  outline: 1px solid var(--tertiary-color);
+  background-color: #ffffff;
 }
 
-button[type=submit] {
-    margin-top: 1rem;
-    font-weight: 500;
+input[type="checkbox"] {
+  width: auto;
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: var(--accent-color-3);
+  color: #ffffff;
 }
