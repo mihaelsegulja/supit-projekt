@@ -1,6 +1,6 @@
 /* Contact popup, sitewide */
 
-$(document).ready(function() {
+jQuery(function($) {
     $.get("/components/contact.html", function(data) {
         $("body").append(data);
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
                     // console.log(message);
                     // console.log(receiveNewsletter);
 
-                    // validation
+                    // Validation
                     if (!fullName || !email || !message){
                         alert("Ispunite sva polja.");
                         return;
@@ -76,22 +76,22 @@ $(document).ready(function() {
         $("#popup-container").dialog("open");
     });
 
-    // on window resize run function
+    // On window resize run function
     $(window).resize(function() {
         fluidDialog();
     });
     
-    // catch dialog if opened within a viewport smaller than the dialog width
+    // Catch dialog if opened within a viewport smaller than the dialog width
     $(document).on("dialogopen", ".ui-dialog", function(event, ui) {
         fluidDialog();
     });
     
     function fluidDialog() {
-        // each open dialog
+        // Each open dialog
         $(".ui-dialog:visible").each(function() {
             var dialog = $(this).find(".ui-dialog-content").data("ui-dialog");
             if (dialog.options.fluid) {
-                // reposition dialog
+                // Reposition dialog
                 dialog.option("position", dialog.options.position);
             }
         });

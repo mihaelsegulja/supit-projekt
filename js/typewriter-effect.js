@@ -1,6 +1,6 @@
 /* Text typewriter animation on homepage */
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
     const beforeText = "Budi izvrstan u onome što voliš.";
     const afterText = "ZAISKRI.";
     const beforeEl = document.getElementById("before-br");
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let indexBefore = 0;
     let indexAfter = 0;
 
-    cursorAfter.style.display = 'none';
+    cursorAfter.style.display = "none"; // Initially hide second cursor
 
     function typeText(text, element, cursor, index, callback) {
         if (index < text.length) {
@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     typeText(beforeText, beforeEl, cursorBefore, indexBefore, function() {
-        cursorBefore.style.display = 'none';
-        cursorAfter.style.display = 'inline-block';
+        cursorBefore.style.display = "none"; // Hide first cursor
+        cursorAfter.style.display = "inline-block"; // Show second cursor
         typeText(afterText, afterEl, cursorAfter, indexAfter, null);
     });
 });

@@ -9,10 +9,12 @@ section h2 {
   text-align: center;
 }
 
-.p-container {
+.p-container-fancy {
   margin: 5vh 5vw;
   font-family: "Quintessential";
   font-size: larger;
+  border-top: 2px solid var(--light-gray);
+  border-bottom: 2px solid var(--light-gray);
 }
 
 #maps {
@@ -90,6 +92,7 @@ h3 span {
   border: 2px solid var(--tertiary-color);
   border-radius: 10px;
   padding: 20px;
+  background-color: var(--primary-color);
 }
 
 .vert p {

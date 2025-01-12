@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prijava</title>
+    <title>Registracija</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <!-- jQuery and jQuery UI -->
     <link rel="stylesheet" href="/node_modules/jquery-ui/dist/themes/base/jquery-ui.min.css">
@@ -17,7 +17,7 @@
     <!-- Project JS -->
     <script src="/js/contact.js" defer></script>
     <script src="/js/animation-global.js" defer></script>
-    <script src="/js/auth.js"></script>
+    <script src="/js/auth.js" defer></script>
 </head>
 <body>
     <nav>
@@ -32,15 +32,17 @@
     </nav>
     <div class="content content-center">
         <div class="login-form animated-item">
-            <h2>PRIJAVA</h2>
-            <form id="login-form">
+            <h2>REGISTRACIJA</h2>
+            <form id="register-form">
                 <label for="username">Korisničko ime</label>
                 <input type="text" id="username" name="Username" required>
                 <label for="password">Lozinka</label>
                 <input type="password" id="password" name="Password" required>
-                <button type="submit">Prijavi se</button>
+                <label for="repeat-password">Ponovljena Lozinka</label>
+                <input type="password" id="repeat-password" name="RepeatPassword" required>
+                <button type="submit">Registriraj se</button>
             </form>
-            <p>Nemaš račun? <a href="register.html">Registriraj se</a></p>
+            <p>Imaš račun? <a href="login.html">Prijavi se</a></p>
         </div>
     </div>
     <footer>

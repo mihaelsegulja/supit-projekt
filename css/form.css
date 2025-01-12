@@ -41,11 +41,14 @@ input[type="checkbox"] {
 button[type="submit"] {
   margin-top: 1rem;
   font-weight: 500;
-  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: var(--accent-color-3);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 button[type="submit"]:hover,
 button[type="submit"]:focus {
-  background-color: var(--accent-color-3);
-  color: #ffffff;
+  background-color: var(--accent-color-2);
+  color: #000000;
 }
