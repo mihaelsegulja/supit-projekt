@@ -65,4 +65,9 @@ jQuery(function($) {
             }
         });
     });
+
+    $("#logout").on("click", function() {
+        sessionStorage.removeItem("token");
+        window.location.href = "/index.html";
+    });
 });

@@ -53,9 +53,6 @@ jQuery(function($) {
                     $("#popup-container").dialog("close");
                 });
             },
-            close: function() {
-                $(".ui-widget-overlay").fadeOut(500).off("click");
-            },
             create: function() {
                 $(this).css("maxWidth", "450px");
                 
@@ -71,7 +68,7 @@ jQuery(function($) {
         });
     });
 
-    $("a[href='#contact']").on("click", function(e) {
+    $("#contact").on("click", function(e) {
         e.preventDefault();
         $("#popup-container").dialog("open");
     });
