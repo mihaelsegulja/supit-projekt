@@ -163,6 +163,14 @@ hr {
   width: 100%;
 }
 
+.error-message {
+  color: #ff0000;
+}
+
+.success-message {
+  color: #008000;
+}
+
 /* content animation */
 @keyframes fadeInFromBottom {
   0% {

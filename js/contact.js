@@ -34,9 +34,11 @@ jQuery(function($) {
                     // console.log(message);
                     // console.log(receiveNewsletter);
 
+                    $("#popup-form-content + .error-message").remove();
+
                     // Validation
                     if (!fullName || !email || !message){
-                        alert("Ispunite sva polja.");
+                        $("<p class='error-message'>Ispunite sva polja!</p>").insertAfter("#popup-form-content");
                         return;
                     }
 
@@ -65,6 +67,11 @@ jQuery(function($) {
                     Kontaktirajte nas</h2>
                 `);
             }
+        });
+
+        // Remove messages when user starts typing
+        $("#popup-form-content input").on("input", function() {
+            $("#popup-form-content + .error-message").remove();
         });
     });
 
