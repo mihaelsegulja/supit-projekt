@@ -76,7 +76,7 @@ jQuery(function($) {
                 password: password
             }),
             success: function(response) {
-                if(response.isSuccess && response.data){
+                if(response.isSuccess){
                     $("<p class='success-message'>Registracija uspješna! Preusmjeravanje...</p>").insertAfter("#register-form");
                     setTimeout(function() {
                         window.location.href = "/views/login.html";
