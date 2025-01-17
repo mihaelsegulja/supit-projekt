@@ -1,14 +1,11 @@
 /* Animations when element appears on screen, sitewide */
 
 const animatedItems = document.querySelectorAll('.animated-item');
-const animatedLinks = document.querySelectorAll('.animated-links');
 
 const handleIntersection = (entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            if (entry.target.classList.contains('animated-links')) {
-                entry.target.classList.add('visible');
-            } else if (entry.target.tagName === 'H1') {
+            if (entry.target.tagName === 'H1') {
                 entry.target.classList.add('h1-visible');
             } else {
                 entry.target.classList.add('visible');
@@ -23,4 +20,3 @@ const observer = new IntersectionObserver(handleIntersection, {
 });
 
 animatedItems.forEach(item => observer.observe(item));
-animatedLinks.forEach(link => observer.observe(link));

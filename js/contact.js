@@ -1,4 +1,4 @@
-/* Contact popup, sitewide */
+/* Contact popup */
 
 jQuery(function($) {
     $.get("/components/contact.html", function(data) {
@@ -75,13 +75,18 @@ jQuery(function($) {
         });
     });
 
-    $("#contact").on("click", function(e) {
-        e.preventDefault();
-        $("#popup-container").dialog("open");
+    // Listen for navbarLoaded custom event,
+    // when navbar loaded and when #contact clicked
+    // open dialog
+    $(document).on("navbarLoaded", function() {
+        $("#contact").on("click", function(e) {
+            e.preventDefault();
+            $("#popup-container").dialog("open");
+        });
     });
 
     // On window resize run function
-    $(window).resize(function() {
+    $(window).on("resize", function() {
         fluidDialog();
     });
     

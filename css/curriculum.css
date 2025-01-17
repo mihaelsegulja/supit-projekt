@@ -1,1 +1,91 @@
 /* Curriculum styling */
+
+.curriculum-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 0;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* autocomplete */
+.ui-autocomplete {
+  max-height: 250px;
+  overflow-y: auto;
+  border: 2px solid var(--tertiary-color) !important;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.ui-menu-item {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.ui-menu-item-wrapper {
+  padding: 10px !important;
+}
+/* autocomplete end */
+
+/* table */
+.table-container {
+  overflow-x: scroll;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table * {
+  padding: 5px 8px;
+}
+
+tr,
+thead tr {
+  border-top: 1px solid var(--tertiary-color);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #dadada;
+}
+
+tfoot tr {
+  border-top: 3px solid var(--secondary-color);
+}
+
+tfoot, #ects, #hours, #lectures, #exercises {
+  text-align: right;
+}
+
+/* table end */
+
+@media screen and (max-width: 550px) {
+  .curriculum-container {
+    flex-direction: column;
+  }
+
+  .curriculum-container * {
+    width: 100%;
+  }
+
+  table * {
+    padding: 3px 5px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  tr {
+    margin-bottom: 5px;
+    border: 1px solid var(--tertiary-color);
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: none;
+  }
+}

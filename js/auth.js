@@ -97,10 +97,4 @@ jQuery(function($) {
     $("#register-form input").on("input", function () {
         $("#register-form + .error-message, #register-form + .success-message").remove();
     });
-
-    $("#logout").on("click", function() {
-        sessionStorage.removeItem("username");
-        sessionStorage.removeItem("token");
-        window.location.href = "/index.html";
-    });
 });
