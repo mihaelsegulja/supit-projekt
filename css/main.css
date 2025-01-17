@@ -234,6 +234,10 @@ hr {
   .content {
     padding: 0 5px 5px;
   }
+
+  .section-links {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -241,3 +245,4 @@ hr {
     padding: 0 20% 5%;
   }
 }
+
