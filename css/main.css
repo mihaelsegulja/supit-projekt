@@ -129,7 +129,7 @@ p {
 }
 
 footer {
-  padding: 30px;
+  padding: 40px;
   background-image: url("/assets/img/zaiskri-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -286,7 +286,6 @@ hr {
     background-color: var(--secondary-color);
     position: absolute;
     top: 100%;
-    right: 0;
     width: 100%;
     text-align: center;
   }

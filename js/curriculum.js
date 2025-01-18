@@ -39,10 +39,10 @@ jQuery(function($) {
                         let newRow = `
                             <tr>
                                 <td data-label="Kolegij">${selectedItem.kolegij}</td>
-                                <td data-label="ECTS" id="ects">${selectedItem.ects}</td>
-                                <td data-label="Sati" id="hours">${selectedItem.sati}</td>
-                                <td data-label="Predavanja" id="lectures">${selectedItem.predavanja}</td>
-                                <td data-label="Vježbe" id="exercises">${selectedItem.vjezbe}</td>
+                                <td data-label="ECTS" id="ects" data-value="${selectedItem.ects}">${selectedItem.ects}</td>
+                                <td data-label="Sati" id="hours" data-value="${selectedItem.sati}">${selectedItem.sati}</td>
+                                <td data-label="Predavanja" id="lectures" data-value="${selectedItem.predavanja}">${selectedItem.predavanja}</td>
+                                <td data-label="Vježbe" id="exercises" data-value="${selectedItem.vjezbe}">${selectedItem.vjezbe}</td>
                                 <td data-label="Tip">${selectedItem.tip}</td>
                                 <td><button class="remove-row">Obriši</button></td>
                             </tr>
@@ -70,6 +70,9 @@ jQuery(function($) {
             updateTotals();
             updateTableDescriptions();
         });
+
+    } else {
+        window.location.href = "/views/login.html";
     }
 
     function updateTotals() {
@@ -80,11 +83,12 @@ jQuery(function($) {
 
         // Loop through each row in the table body
         $("table tbody tr").each(function() {
-            totalEcts += parseInt($(this).find("#ects").text()) || 0;
-            totalHours += parseInt($(this).find("#hours").text()) || 0;
-            totalLectures += parseInt($(this).find("#lectures").text()) || 0;
-            totalExercises += parseInt($(this).find("#exercises").text()) || 0;
+            totalEcts += parseInt($(this).find("#ects").data("value")) || 0;
+            totalHours += parseInt($(this).find("#hours").data("value")) || 0;
+            totalLectures += parseInt($(this).find("#lectures").data("value")) || 0;
+            totalExercises += parseInt($(this).find("#exercises").data("value")) || 0;
         });
+    
 
         // Update the footer
         $("#total-ects").text(totalEcts);

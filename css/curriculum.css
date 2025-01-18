@@ -71,6 +71,7 @@ tfoot, #ects, #hours, #lectures, #exercises {
 
   table * {
     padding: 3px 5px;
+    border-radius: 5px;
   }
 
   table, thead, tbody, th, td, tr {

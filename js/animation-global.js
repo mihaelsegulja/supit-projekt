@@ -2,7 +2,7 @@
 
 const animatedItems = document.querySelectorAll('.animated-item');
 
-const handleIntersection = (entries, observer) => {
+const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             if (entry.target.tagName === 'H1') {
@@ -13,9 +13,7 @@ const handleIntersection = (entries, observer) => {
             observer.unobserve(entry.target);
         }
     });
-};
-
-const observer = new IntersectionObserver(handleIntersection, {
+}, {
     threshold: 0 // Trigger as soon as element enters the viewport
 });
 
