@@ -1,17 +1,23 @@
 /* Text typewriter animation on homepage */
 
 document.addEventListener("DOMContentLoaded", function() {
-    const beforeText = "Budi izvrstan u onome što voliš.";
-    const afterText = "ZAISKRI.";
-    const beforeEl = document.getElementById("before-br");
-    const afterEl = document.getElementById("after-br");
-    const cursorBefore = document.getElementById("cursor-before");
-    const cursorAfter = document.getElementById("cursor-after");
+    const firstText = "Budi izvrstan u onome što voliš.";
+    const secondText = "ZAISKRI.";
+    const firstEl = document.getElementById("first-line");
+    const secondEl = document.getElementById("second-line");
+    const cursorFirst = document.getElementById("cursor-first");
+    const cursorSecond = document.getElementById("cursor-second");
 
     let indexBefore = 0;
     let indexAfter = 0;
 
-    cursorAfter.style.display = "none"; // Initially hide second cursor
+    cursorSecond.style.display = "none"; // Initially hide second cursor
+
+    typeText(firstText, firstEl, cursorFirst, indexBefore, function() {
+        cursorFirst.style.display = "none"; // Hide first cursor
+        cursorSecond.style.display = "inline-block"; // Show second cursor
+        typeText(secondText, secondEl, cursorSecond, indexAfter, null);
+    });
 
     function typeText(text, element, cursor, index, callback) {
         if (index < text.length) {
@@ -22,10 +28,4 @@ document.addEventListener("DOMContentLoaded", function() {
             if (callback) callback();
         }
     }
-
-    typeText(beforeText, beforeEl, cursorBefore, indexBefore, function() {
-        cursorBefore.style.display = "none"; // Hide first cursor
-        cursorAfter.style.display = "inline-block"; // Show second cursor
-        typeText(afterText, afterEl, cursorAfter, indexAfter, null);
-    });
 });

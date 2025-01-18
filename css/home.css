@@ -26,15 +26,15 @@
   background: #00000046;
   z-index: 1;
 }
+/* video background end */
 
-.video-background p {
+.motto {
   font-size: 2em;
   font-family: "Fira Mono" !important;
   margin: 0;
   position: relative;
   z-index: 2;
 }
-/* video background end */
 
 /* cursor */
 .cursor {

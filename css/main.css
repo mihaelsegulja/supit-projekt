@@ -117,23 +117,22 @@ footer {
   background-image: url("/assets/img/zaiskri-bg.jpg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
 }
 
 /* motto text */
-#before-br,
-#after-br {
+#first-line,
+#second-line {
   font-size: 2em;
   font-weight: 600;
 }
 
-#before-br {
+#first-line {
   color: #ffffff;
 }
 
-#after-br {
+#second-line {
   --bg-size: 400%;
   background: linear-gradient(
       90deg,
@@ -147,7 +146,7 @@ footer {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  #after-br {
+  #second-line {
     animation: move-bg 8s linear infinite;
   }
   @keyframes move-bg {
