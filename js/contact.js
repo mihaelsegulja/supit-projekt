@@ -62,9 +62,7 @@ jQuery(function($) {
                 .closest(".ui-dialog")
                 .find(".ui-dialog-title")
                 .html(`
-                    <h2 style="font-size:1.5em;">
-                    <i class="nf nf-oct-mail"></i> 
-                    Kontaktirajte nas</h2>
+                    <h2><i class="nf nf-oct-mail"></i> Kontaktirajte nas</h2>
                 `);
             }
         });
