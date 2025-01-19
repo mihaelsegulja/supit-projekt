@@ -1,6 +1,6 @@
 /* Fonts and icons  */
 
-@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import url("nerdfonts-icons.css");
 
 @font-face {
   font-family: "Fira Sans";

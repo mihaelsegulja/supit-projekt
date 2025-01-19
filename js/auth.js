@@ -2,7 +2,7 @@
 
 jQuery(function($) {
     $("#login-form").on("submit", function(e) {
-        e.preventDefault(); // Prevent default form submission
+        e.preventDefault();
         
         const username = $("#username").val();
         const password = $("#password").val();
@@ -49,7 +49,7 @@ jQuery(function($) {
     });
 
     $("#register-form").on("submit", function(e) {
-        e.preventDefault(); // Prevent default form submission
+        e.preventDefault();
 
         const username = $("#username").val();
         const password = $("#password").val();

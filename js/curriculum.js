@@ -89,7 +89,6 @@ jQuery(function($) {
             totalExercises += parseInt($(this).find("#exercises").data("value")) || 0;
         });
     
-
         // Update the footer
         $("#total-ects").text(totalEcts);
         $("#total-hours").text(totalHours);

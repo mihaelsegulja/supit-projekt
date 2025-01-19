@@ -57,7 +57,8 @@ jQuery(function($) {
         });
         
         // Toggle hamburger menu and show/hide navigation links
-        $(document).on("click", ".hamburger", function() {
+        $(document).on("click", ".hamburger", function(e) {
+            e.stopPropagation();
             $(this).toggleClass("active");
             $(".main-links").toggleClass("active");
         });
@@ -66,6 +67,14 @@ jQuery(function($) {
         $(document).on("click", ".main-links a", function() {
             $(".hamburger").removeClass("active");
             $(".main-links").removeClass("active");
+        });
+
+        // Hide menu when clicked anywhere
+        $(document).on("click", function() {
+            if ($(".main-links").hasClass("active")) {
+                $(".hamburger").removeClass("active");
+                $(".main-links").removeClass("active");
+            }
         });
     });
 });
