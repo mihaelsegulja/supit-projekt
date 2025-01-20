@@ -27,6 +27,7 @@ jQuery(function($) {
 
         function curriculumAutocomplete(dataList) {
             $("#curriculum-list").autocomplete({
+                minLength: 0,
                 source: dataList.map(item => item.kolegij),
                 select: function(event, ui) {
                     let selectedCourse = ui.item.value;
@@ -60,6 +61,9 @@ jQuery(function($) {
                         "width": $("#curriculum-list").outerWidth()
                     });
                 }
+            })
+            .on("focus", function(){
+                $(this).autocomplete("search", $(this).val());
             });
         }
 
