@@ -24,61 +24,60 @@ jQuery(function($) {
                 console.log("Fetching curriculum list failed: " + xhr.responseText);
             }
         });
-
-        function curriculumAutocomplete(dataList) {
-            $("#curriculum-list").autocomplete({
-                minLength: 0,
-                source: dataList.map(item => item.kolegij),
-                select: function(event, ui) {
-                    let selectedCourse = ui.item.value;
-    
-                    // Find the full item data
-                    let selectedItem = dataList.find(item => item.kolegij === selectedCourse);
-    
-                    if(selectedItem) {
-                        // Add the selected item to the table
-                        let newRow = `
-                            <tr>
-                                <td data-label="Kolegij">${selectedItem.kolegij}</td>
-                                <td data-label="ECTS" id="ects" data-value="${selectedItem.ects}">${selectedItem.ects}</td>
-                                <td data-label="Sati" id="hours" data-value="${selectedItem.sati}">${selectedItem.sati}</td>
-                                <td data-label="Predavanja" id="lectures" data-value="${selectedItem.predavanja}">${selectedItem.predavanja}</td>
-                                <td data-label="Vježbe" id="exercises" data-value="${selectedItem.vjezbe}">${selectedItem.vjezbe}</td>
-                                <td data-label="Tip">${selectedItem.tip}</td>
-                                <td><button class="remove-row">Obriši</button></td>
-                            </tr>
-                        `;
-    
-                        // Append the new row to the table body
-                        $("table tbody").append(newRow);
-    
-                        updateTotals();
-                        updateTableDescriptions();
-                    }
-                },
-                open: function() {
-                    $(".ui-menu").css({
-                        "width": $("#curriculum-list").outerWidth()
-                    });
-                }
-            })
-            .on("focus", function(){
-                $(this).autocomplete("search", $(this).val());
-            });
-        }
-
-        // Event delegation for removing rows
-        $("table").on("click", ".remove-row", function() {
-            $(this).closest("tr").remove();
-
-            updateTotals();
-            updateTableDescriptions();
-        });
-
     } else {
         window.location.href = "/views/login.html";
     }
 
+    function curriculumAutocomplete(dataList) {
+        $("#curriculum-list").autocomplete({
+            minLength: 0,
+            source: dataList.map(item => item.kolegij),
+            select: function(event, ui) {
+                let selectedCourse = ui.item.value;
+
+                // Find the full item data
+                let selectedItem = dataList.find(item => item.kolegij === selectedCourse);
+
+                if(selectedItem) {
+                    // Add the selected item to the table
+                    let newRow = `
+                        <tr>
+                            <td data-label="Kolegij">${selectedItem.kolegij}</td>
+                            <td data-label="ECTS" id="ects" data-value="${selectedItem.ects}">${selectedItem.ects}</td>
+                            <td data-label="Sati" id="hours" data-value="${selectedItem.sati}">${selectedItem.sati}</td>
+                            <td data-label="Predavanja" id="lectures" data-value="${selectedItem.predavanja}">${selectedItem.predavanja}</td>
+                            <td data-label="Vježbe" id="exercises" data-value="${selectedItem.vjezbe}">${selectedItem.vjezbe}</td>
+                            <td data-label="Tip">${selectedItem.tip}</td>
+                            <td><button class="remove-row">Obriši</button></td>
+                        </tr>
+                    `;
+
+                    // Append the new row to the table body
+                    $("table tbody").append(newRow);
+
+                    updateTotals();
+                    updateTableDescriptions();
+                }
+            },
+            open: function() {
+                $(".ui-menu").css({
+                    "width": $("#curriculum-list").outerWidth()
+                });
+            }
+        })
+        .on("focus", function(){
+            $(this).autocomplete("search", $(this).val());
+        });
+    }
+
+    // Event delegation for removing rows
+    $("table").on("click", ".remove-row", function() {
+        $(this).closest("tr").remove();
+
+        updateTotals();
+        updateTableDescriptions();
+    });
+    
     function updateTotals() {
         let totalEcts = 0;
         let totalHours = 0;

@@ -89,7 +89,7 @@ jQuery(function($) {
     });
     
     // Catch dialog if opened within a viewport smaller than the dialog width
-    $(document).on("dialogopen", ".ui-dialog", function(event, ui) {
+    $(document).on("dialogopen", ".ui-dialog", function() {
         fluidDialog();
     });
     

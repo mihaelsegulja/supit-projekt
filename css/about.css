@@ -2,7 +2,7 @@
 
 section {
   scroll-margin-top: 60px;
-  margin: 3vh 0;
+  margin: 4vh 0;
 }
 
 section h2 {
@@ -80,7 +80,7 @@ h3 span {
   background-clip: text;
 }
 
-.vert-container{
+.vert-container {
   display: flex;
   padding: 10px 0;
   flex-wrap: wrap;

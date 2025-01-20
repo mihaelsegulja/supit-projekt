@@ -10,6 +10,12 @@
   flex-wrap: wrap;
 }
 
+.news-container * {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0000005b;
+}
+
 .news-item {
   padding: 0;
   border: 10px solid var(--tertiary-color);
@@ -46,12 +52,6 @@
 
 .news-item:nth-child(3) {
   background-image: url("/assets/img/novost3.jpg");
-}
-
-.news-container * {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #0000005b;
 }
 
 .news-item h3 {

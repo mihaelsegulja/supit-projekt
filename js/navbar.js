@@ -35,6 +35,7 @@ jQuery(function($) {
                 <a href="#find-us">Kako do nas?</a>
             </div>
             `;
+            
             $("nav").append(sectionLinks);
             $(".section-links").addClass("visible");
         } else {

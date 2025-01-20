@@ -50,11 +50,11 @@ button[type="submit"],
 }
 
 button[type="submit"] {
-    background-color: var(--accent-color-3);
+  background-color: var(--accent-color-3);
 }
 
 .remove-row {
-    background-color: var(--accent-color-1);
+  background-color: var(--accent-color-1);
 }
 
 button[type="submit"]:hover,

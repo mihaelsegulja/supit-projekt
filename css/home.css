@@ -40,7 +40,7 @@
 .cursor {
   display: inline-block;
   width: 8px;
-  height: 1.8em;
+  height: 2em;
   background-color: #ffffff;
   animation: blink 0.8s step-end infinite;
 }
