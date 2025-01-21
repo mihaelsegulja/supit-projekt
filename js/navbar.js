@@ -1,7 +1,7 @@
 /* Load navbar */
 
 jQuery(function($) {
-    $.get("/components/navbar.html", function(data){
+    $.get("./components/navbar.html", function(data){
         $("body").prepend(data);
 
         // Trigger a custom event after navbar is loaded
@@ -11,12 +11,12 @@ jQuery(function($) {
         const username = sessionStorage.getItem("username");
         
         const curriculumLink = `
-        <a href="/views/curriculum.html" id="curriculum">
+        <a href="./views/curriculum.html" id="curriculum">
             <i class="nf nf-oct-mortar_board"></i> Nastavni plan
         </a>
         `;
         const loginLink = `
-        <a href="/views/login.html" id="login">
+        <a href="./views/login.html" id="login">
             <i class="nf nf-oct-sign_in"></i> Prijava
         </a>
         `;
@@ -26,7 +26,7 @@ jQuery(function($) {
         </a>
         `;
         
-        if (window.location.pathname === "/views/about.html") {
+        if (window.location.pathname === "./views/about.html") {
             const sectionLinks = `
             <div class="section-links animated-links">
                 <a href="#our-values">Naše vrijednosti</a>
@@ -54,7 +54,7 @@ jQuery(function($) {
             $("#logout").replaceWith(loginLink);
             $("#curriculum").remove();
 
-            window.location.href = "/index.html";
+            window.location.href = "./index.html";
         });
         
         // Toggle hamburger menu and show/hide navigation links

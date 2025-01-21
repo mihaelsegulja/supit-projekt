@@ -1,7 +1,7 @@
 /* Contact popup */
 
 jQuery(function($) {
-    $.get("/components/contact.html", function(data) {
+    $.get("./components/contact.html", function(data) {
         $("body").append(data);
 
         $("#popup-container").dialog({
