@@ -25,7 +25,7 @@ jQuery(function($) {
             }
         });
     } else {
-        window.location.href = "/views/login.html";
+        window.location.href = "../views/login.html";
     }
 
     function curriculumAutocomplete(dataList) {

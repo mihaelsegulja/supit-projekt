@@ -11,12 +11,12 @@ jQuery(function($) {
         const username = sessionStorage.getItem("username");
         
         const curriculumLink = `
-        <a href="/views/curriculum.html" id="curriculum">
+        <a href="../views/curriculum.html" id="curriculum">
             <i class="nf nf-oct-mortar_board"></i> Nastavni plan
         </a>
         `;
         const loginLink = `
-        <a href="/views/login.html" id="login">
+        <a href="../views/login.html" id="login">
             <i class="nf nf-oct-sign_in"></i> Prijava
         </a>
         `;
