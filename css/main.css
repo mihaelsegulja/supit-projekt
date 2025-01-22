@@ -19,7 +19,8 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
+  font-size: 100%;
 }
 
 body {
@@ -73,7 +74,7 @@ nav {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   padding: 15px;
 }
 
@@ -204,7 +205,7 @@ hr {
 @keyframes fadeInFromBottom {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(75px);
   }
   100% {
     opacity: 1;
@@ -215,7 +216,7 @@ hr {
 @keyframes fadeInFromTop {
   0% {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-75px);
   }
   100% {
     opacity: 1;
@@ -226,7 +227,7 @@ hr {
 @keyframes fadeInFromRight {
   0% {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(75px);
   }
   100% {
     opacity: 1;
@@ -236,7 +237,7 @@ hr {
 
 .animated-item {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(75px);
   transition: opacity 0.6s, transform 0.6s;
 }
 
@@ -250,7 +251,7 @@ hr {
 
 .animated-links {
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateX(75px);
   transition: opacity 0.6s, transform 0.6s;
 }
 

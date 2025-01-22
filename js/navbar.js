@@ -47,6 +47,7 @@ jQuery(function($) {
             $("#login").replaceWith(logoutLink);
         }
 
+        // Logout
         $("#logout").on("click", function() {
             sessionStorage.removeItem("username");
             sessionStorage.removeItem("token");
@@ -54,7 +55,7 @@ jQuery(function($) {
             $("#logout").replaceWith(loginLink);
             $("#curriculum").remove();
 
-            window.location.href = "./index.html";
+            window.location.href = "/index.html";
         });
         
         // Toggle hamburger menu and show/hide navigation links

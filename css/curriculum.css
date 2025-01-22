@@ -16,7 +16,7 @@
   overflow-y: auto;
   border: 2px solid var(--tertiary-color) !important;
   border-radius: 5px;
-  box-shadow: 0 4px 8px #0000001a;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
 .ui-menu-item {
