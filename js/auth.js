@@ -29,7 +29,7 @@ jQuery(function($) {
                     sessionStorage.setItem("token", response.data.token);
                     $("<p class='success-message'>Prijava uspješna! Preusmjeravanje...</p>").insertAfter("#login-form");
                     setTimeout(function() {
-                        window.location.href = "/index.html";
+                        window.location.href = "index.html";
                     }, 2000);
                 } else {
                     $("<p class='error-message'>" +
@@ -79,7 +79,7 @@ jQuery(function($) {
                 if(response.isSuccess){
                     $("<p class='success-message'>Registracija uspješna! Preusmjeravanje...</p>").insertAfter("#register-form");
                     setTimeout(function() {
-                        window.location.href = "/views/login.html";
+                        window.location.href = "views/login.html";
                     }, 2000);
                 } else {
                     $("<p class='error-message'>" +
