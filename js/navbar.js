@@ -26,7 +26,7 @@ jQuery(function($) {
         </a>
         `;
         
-        if (window.location.pathname === "views/about.html") {
+        if (window.location.pathname.endsWith("views/about.html")) {
             const sectionLinks = `
             <div class="section-links animated-links">
                 <a href="#our-values">Naše vrijednosti</a>
