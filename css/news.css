@@ -43,15 +43,15 @@
 }
 
 .news-item:nth-child(1) {
-  background-image: url("assets/img/novost1.jpg");
+  background-image: url("../assets/img/novost1.jpg");
 }
 
 .news-item:nth-child(2) {
-  background-image: url("assets/img/novost2.jpg");
+  background-image: url("../assets/img/novost2.jpg");
 }
 
 .news-item:nth-child(3) {
-  background-image: url("assets/img/novost3.jpg");
+  background-image: url("../assets/img/novost3.jpg");
 }
 
 .news-item h3 {

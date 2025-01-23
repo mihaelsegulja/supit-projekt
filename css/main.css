@@ -145,7 +145,7 @@ p {
 
 footer {
   padding: 40px;
-  background-image: url("assets/img/zaiskri-bg.jpg");
+  background-image: url("../assets/img/zaiskri-bg.jpg");
   background-size: cover;
   background-position: center;
   display: block;
