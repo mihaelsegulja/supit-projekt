@@ -61,14 +61,8 @@ jQuery(function($) {
         // Toggle hamburger menu and show/hide navigation links
         $(document).on("click", ".hamburger", function(e) {
             e.stopPropagation();
-            $(this).toggleClass("active");
+            $(".hamburger").toggleClass("active");
             $(".main-links").toggleClass("active");
-        });
-
-        // Hide menu when a link is clicked
-        $(document).on("click", ".main-links a", function() {
-            $(".hamburger").removeClass("active");
-            $(".main-links").removeClass("active");
         });
 
         // Hide menu when clicked anywhere

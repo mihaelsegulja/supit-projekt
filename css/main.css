@@ -279,14 +279,17 @@ hr {
 
   .hamburger .open-icon {
     display: block;
+    animation: fadeIn 0.3s;
   }
 
   .hamburger.active .open-icon {
     display: none;
+    animation: fadeOut 0.3s;
   }
 
   .hamburger.active .close-icon {
     display: block;
+    animation: fadeIn 0.3s;
   }
 
   .main-links {
@@ -305,6 +308,7 @@ hr {
 
   .main-links.active {
     display: flex;
+    animation: fadeIn 0.3s;
   }
 }
 
@@ -312,4 +316,14 @@ hr {
   .content {
     max-width: 100%;
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
