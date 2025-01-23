@@ -29,10 +29,10 @@ jQuery(function($) {
         if (window.location.pathname.endsWith("views/about.html")) {
             const sectionLinks = `
             <div class="section-links animated-links">
-                <a href="#our-values">Naše vrijednosti</a>
-                <a href="#history">Povijest</a>
-                <a href="#algebra-group">Algebra grupa</a>
-                <a href="#find-us">Kako do nas?</a>
+                <a href="views/about.html#our-values">Naše vrijednosti</a>
+                <a href="views/about.html#history">Povijest</a>
+                <a href="views/about.html#algebra-group">Algebra grupa</a>
+                <a href="views/about.html#find-us">Kako do nas?</a>
             </div>
             `;
             
