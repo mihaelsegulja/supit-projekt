@@ -78,6 +78,7 @@
 
 /* news-1 */
 .gallery-container {
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
