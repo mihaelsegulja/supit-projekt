@@ -19,7 +19,6 @@
   "description": "website project for college",
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
-    "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
     "jquery-ui": "^1.14.1"
   }
