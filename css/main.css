@@ -46,7 +46,7 @@ nav {
 
 .main-links a,
 .section-links a {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
   margin: 0 15px;
   font-weight: 600;
@@ -160,7 +160,7 @@ footer {
 }
 
 #first-line {
-  color: #ffffff;
+  color: var(--white);
 }
 
 #second-line {

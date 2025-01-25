@@ -41,7 +41,7 @@
   display: inline-block;
   width: 8px;
   height: 2em;
-  background-color: #ffffff;
+  background-color: var(--white);
   animation: blink 0.8s step-end infinite;
 }
 

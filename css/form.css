@@ -33,7 +33,7 @@ select:focus,
 button[type="submit"]:focus,
 .remove-row:focus {
   outline: 1px solid var(--tertiary-color);
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 input[type="checkbox"] {
@@ -45,7 +45,7 @@ button[type="submit"],
   margin-top: 1rem;
   font-weight: 500;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--white);
   transition: background-color 0.3s, color 0.3s;
 }
 
